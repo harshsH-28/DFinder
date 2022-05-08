@@ -1,0 +1,344 @@
+/*always starts the code with writing the mlost basic html and css code */
+
+
+html {
+  box-sizing: border-box;
+  font-family:'Public Sans', sans-serif;
+
+
+
+*:after,*:before {
+    box-sizing:inherit;
+}
+}
+
+body {
+  font-size:1.25rem;
+  padding:0;
+  margin:0;
+  line-height:1.5;
+}
+
+a,a:hover,a:visited {
+  text-decoration:none;
+}
+
+nav {
+  padding:22px;
+  padding-left:28px;
+  background-color:  hsl(0, 0%, 100%);
+}
+
+
+
+button {
+       border-radius:50px;
+       border:0
+
+}
+
+
+.flex-box {          /*this would be a classic flex box class that is usable*/
+  display:flex;
+  flex-directon:column;
+}
+
+
+/*here we would be starting our code wth building a lot of  more flex classes */
+
+.jc-flex-sb {
+  justify-content:space-between;
+
+}
+
+.jc-flex-c {
+  justify-content:center;
+}
+
+.jc-flex-ai {
+  align-items:center;
+}
+
+
+.logo {
+  margin-top:8px;
+}
+
+.hamburger {
+display:block;
+width:25px;
+height:4px;
+background-color: hsl(233, 26%, 24%);
+margin-bottom:4px;
+
+}
+
+.hammenu:hover .hamburger {
+  margin-top:5px;
+}
+
+
+.open {
+  display:none;
+}
+
+
+.close {
+    display:block;
+
+}
+
+.hammenu-none {
+  display:none;
+}
+
+
+
+.navlinks {
+
+  color: hsl(233, 8%, 62%);
+  margin-right:25px;
+  font-size:1rem;
+  padding-bottom: 22px;
+
+}
+
+.navlinks:hover {
+  border-bottom: solid hsl(136, 65%, 51%);
+  border-width:1px;
+  transition-property: border-bottom;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+}
+
+
+.navbutton {
+   width: 140px;
+   height: 40px;
+   cursor:pointer;
+   background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+   margin-right:20px;
+}
+
+.navbutton a {
+   color: hsl(0, 0%, 100%);
+   font-weight: 400;
+}
+
+
+.navbutton:hover {
+  opacity:0.75;
+}
+
+
+.hamburgerdiv {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menU {
+  display:none;
+}
+
+
+
+
+ .menu {
+  display:block;
+  background-color:#FEFBF3;
+  width: 85%;
+  margin:auto;
+  opacity:0.8;
+  text-align:center;
+  border-radius:4%;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding:25px;
+}
+
+.menu li {
+  padding: 12px 0px;
+}
+
+.menu a {
+  color: #000000;
+  font-weight:500;
+}
+
+.menu a:hover {
+  color: #000000;
+}
+
+
+
+.animation {
+  overflow: hidden;
+  position:relative;
+  animation-name: menu;
+  animation-delay:1s;
+  animation-duration:2.5s;
+  animation-timing-function: ease-in-out;
+  animation-direction: forwards;
+  background-image:linear-gradient(to right,hsl(233, 26%, 24%),hsl(192, 70%, 51%));
+}
+
+@keyframes menu {
+  from {
+    display:none;
+  }
+
+  to {
+  }
+  display:block;
+}
+
+/*desgning the hero section*/
+
+
+.hero-written {
+   text-align:left;
+   width:60%;
+   padding:80px 0px 50px 100px;
+}
+
+.hero-written h1 {
+  font-size :2.5rem;
+  font-weight:300;
+  line-height:1.2;
+  color:hsl(233, 26%, 24%);
+}
+
+.hero-written p {
+  font-size:1.2rem;
+  font-weight:300;
+  line-height:1
+  color:hsl(0, 0%, 98%);
+
+}
+
+
+.hero-img {
+  width:50%;
+  min-height:16rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:relative;
+}
+
+
+
+.img-halftro {
+  width:100%;
+  position:absolute;
+}
+
+.logo-img {
+  inline-size:4rem;
+  block-size:4rem;
+}
+
+
+#testimonials {
+  background-color: #088F8F;
+  width:80%;
+  margin-left:auto;
+  margin-right:auto;
+  text-align: center;
+  font-family: 'Montserrat-black', sans-serif;
+  color: #fff;
+}
+
+#testimonial-carousel {
+  padding: 7% 15%;
+}
+
+.testimonials-division h2 {
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonials-division img {
+  border-radius: 100%;
+  width: 20%;
+  margin-top: 20px;
+}
+
+#testimonials p {
+  margin-block-start:2rem;
+}
+
+
+label {
+  display:block;
+  color:#808080;
+  margin-inline-start:2rem;
+}
+
+input {
+  margin-inline-start:2rem;
+}
+
+
+#buttonn {
+  margin-inline-start:2rem;
+  color:black;
+  display:block;
+  margin-block-start:1rem;
+}
+
+/*reponsiveness*/
+
+@media (max-width:767px)
+{
+  .hidemobile {
+    display:none;
+  }
+
+  .mob {
+    flex-wrap:wrap;
+  }
+
+  .mob-1 {
+    margin-left:auto;
+    margin-right:auto;
+  }
+}
+
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color:grey;
+  margin:0 auto;
+  text-align: center;
+  font-size:1rem;
+}
+
+/* .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+} */
+
+@media (min-width:768px)
+{
+  .hidedesktop {
+    display:none;
+  }
+}
+
+@media (min-width:1281px)
+{
+  .hidedesktop {
+    display:none;
+  }
+}

@@ -1,0 +1,24 @@
+<%- include("header.ejs") %>
+<form class="" action="/form" method="POST" enctype="multipart/form-data">
+  <label for="name">NAME</label>
+  <input type="text" name="name" value="" id="name" />
+
+  <label for="email">Email</label>
+  <input type="email" name="email" value="" id="email" />
+
+  <label for="age">AGE</label>
+  <input type="text" name="" value="" id="age" />
+
+  <label for="SYMPTOMS">SYMPTOMS</label>
+  <input type="text" name="SYMPTOMS" value="" id="SYMPTOMS" />
+
+  <label for="gender">Gender</label>
+  <input type="text" name="gender" value="" id="gender" />
+
+  <label for="img">UPLOAD IMAGE</label>
+  <input type="file" name="image" id="img" />
+
+  <button id="buttonn" type="submit" name="finsub">Submit</button>
+</form>
+
+<%- include("footer.ejs") %>
