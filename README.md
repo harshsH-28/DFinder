@@ -1,6 +1,6 @@
 # DFinder
 
-Razor Blade aims to provide an AI-based approach to diagnosing covid-19, pneumonia, and tuberculosis by analyzing x-ray images with the help of an ML model that detects severity and accuracy. 
+DFinder aims to provide an AI-based approach to diagnosing covid-19, pneumonia, and tuberculosis by analyzing x-ray images with the help of an ML model that detects severity and accuracy. 
 
 ## Tech Stack Used
 
